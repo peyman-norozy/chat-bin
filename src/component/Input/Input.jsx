@@ -1,8 +1,13 @@
 const Input = (props) => {
-  const { Inputtype, changeHandler } = props;
+  const { Inputtype, changeHandler, className, placeHolder } = props;
   return (
     <>
-      <input type={Inputtype} onChange={changeHandler} />
+      <input
+        type={Inputtype}
+        onChange={changeHandler}
+        placeholder={placeHolder}
+        className={className}
+      />
     </>
   );
 };

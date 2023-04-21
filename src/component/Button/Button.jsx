@@ -1,8 +1,10 @@
 const Button = (props) => {
-  const { clickHandler } = props;
+  const { clickHandler, className } = props;
   return (
     <>
-      <button onClick={clickHandler}>click me</button>
+      <button onClick={clickHandler} className={className}>
+        <img src="./send.png" alt="" className="w-[60%]" />
+      </button>
     </>
   );
 };
