@@ -1,15 +1,17 @@
-import Input from "../component/Input/Input";
 import React, { useState } from "react";
+import Input from "../component/Input/Input";
 import Button from "../component/Button/Button";
 
 const ClientPage = () => {
-  const [clientMessage, setClientMessage] = useState("");
+  const [clientMessage, setClientMessage] = useState<string>("");
 
-  const clientSendHandler = () => {
+  const clientSendHandler = (): void => {
     console.log(clientMessage);
   };
 
-  const clientTextHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const clientTextHandler = (
+    event: React.ChangeEvent<HTMLInputElement>
+  ): void => {
     setClientMessage(event.target.value);
   };
 
