@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: iranSans;
+  src: url(./assets/font/IRANSANSWEB.TTF);
+}
+
+* {
+  font-family: iranSans;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

@@ -1,19 +1,35 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const HeaderLayout = () => {
+  const active: string = "bg-[#5cffe9] py-[9px] px-[10px] text-[#aaa]";
   return (
     <>
-      <header>
+      <header className="bg-[#009e96] ">
         <nav>
-          <ul className="flex">
+          <ul className="flex justify-center items-center gap-[20px] text-white py-[10px]">
             <li>
-              <Link to="/">samira norozy</Link>
+              <NavLink
+                to="/"
+                className={({ isActive }) => (isActive ? active : "")}
+              >
+                خانه
+              </NavLink>
             </li>
             <li>
-              <Link to="client">sho norozyaf</Link>
+              <NavLink
+                to="client"
+                className={({ isActive }) => (isActive ? active : "")}
+              >
+                پنل مشتری
+              </NavLink>
             </li>
             <li>
-              <Link to="support">sho norozyaf</Link>
+              <NavLink
+                to="support"
+                className={({ isActive }) => (isActive ? active : "")}
+              >
+                پنل پشتیبانی
+              </NavLink>
             </li>
           </ul>
         </nav>

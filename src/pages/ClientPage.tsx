@@ -1,7 +1,9 @@
+import ChatTextSection from "../component/ChatTextSection";
+
 const ClientPage = () => {
   return (
     <>
-      <div>client</div>
+      <ChatTextSection />
     </>
   );
 };
