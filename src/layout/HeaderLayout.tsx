@@ -4,7 +4,7 @@ const HeaderLayout = () => {
   const active: string = "bg-[#5cffe9] py-[9px] px-[10px] text-[#aaa]";
   return (
     <>
-      <header className="bg-[#009e96] ">
+      <header className="bg-[#009e96] fixed w-full z-10">
         <nav>
           <ul className="flex justify-center items-center gap-[20px] text-white py-[10px]">
             <li>
