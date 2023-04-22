@@ -13,7 +13,7 @@ const ChatTextSection = () => {
   console.log(messageContent);
   return (
     <>
-      <div className="h-full py-[10px] px-[10px] over ">
+      <div className="h-80% py-[10px] px-[10px] pt-[44px] mb-[50px] w-full">
         {messageContent.messageContent.message.map((item) => {
           return (
             <div className={item.client ? "" : "flex justify-end"}>
