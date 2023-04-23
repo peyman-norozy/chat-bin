@@ -28,7 +28,7 @@ const ClientPage = () => {
         <Button
           clickHandler={clientSendHandler}
           className={
-            "bg-[#2BC48A] rounded-full w-[50px] h-[50px] flex justify-center items-center"
+            "bg-[#2BC48A] rounded-full w-[50px] h-[50px] flex justify-center items-center hover:bg-[#006941] hover:transition hover:ease-out hover:duration-1000"
           }
         />
         <Input
