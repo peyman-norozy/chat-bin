@@ -35,7 +35,7 @@ const SupportPage = () => {
           Inputtype={"text"}
           changeHandler={supportTextHandler}
           placeHolder={"پیام خود را بنویسید..."}
-          className={"outline-none border rounded-xl w-[90%] pr-2 py-2"}
+          className={"outline-none border rounded-xl w-[90%] pr-2 py-[10px]"}
         />
       </div>
     </>
