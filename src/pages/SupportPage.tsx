@@ -25,7 +25,7 @@ const SupportPage = () => {
   return (
     <>
       <ChatTextSection />
-      <div className="flex justify-center items-center gap-2 fixed bottom-0 w-full bg-[#FFFFFF] pb-[4px]">
+      <div className="flex justify-center items-center gap-2 fixed bottom-0 w-full bg-[#eee] py-[20px] rounded-tl-full rounded-tr-full">
         <Button
           clickHandler={supportSendHandler}
           className={
