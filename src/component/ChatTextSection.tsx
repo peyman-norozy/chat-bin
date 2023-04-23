@@ -1,11 +1,10 @@
 import { useSelector } from "react-redux";
 import { RootState } from "../store";
+import style from "./ChatTextSection.module.css";
 
-const textRight =
-  "bg-[#4E426D] mt-2 text-[#eee] text-[14px] py-[10px] px-[10px] w-[30%] rounded-e-2xl rounded-br-2xl";
+const textRight = `bg-[#4E426D] mt-2 text-[#eee] text-[14px] py-[10px] px-[10px] w-[30%] rounded-e-2xl rounded-br-2xl ${style.move}`;
 
-const textLeft =
-  "bg-[#F5F7FB] mt-2 text-[#aaa] text-[14px] py-[10px] px-[10px] w-[30%] rounded-s-2xl rounded-bl-2xl";
+const textLeft = `bg-[#F5F7FB] mt-2 text-[#aaa] text-[14px] py-[10px] px-[10px] w-[30%] rounded-s-2xl rounded-bl-2xl ${style.move}`;
 
 const ChatTextSection = () => {
   const messageContent = useSelector((state: RootState) => state);

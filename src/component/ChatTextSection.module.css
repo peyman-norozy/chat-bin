@@ -1,0 +1,12 @@
+.move {
+  animation: textMoving 0.3s ease-out;
+}
+
+@keyframes textMoving {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
